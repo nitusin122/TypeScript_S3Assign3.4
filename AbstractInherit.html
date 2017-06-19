@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Abstract Inheritance Assignment</title>
+    <script type="text/javascript" src="Abstract.js"></script>
+</head>
+<body>
+    <div id="resultDiv"></div>
+    <script type="text/javascript">
+        //Making objects of class 
+        var myAccDept = new AccountingDept("Finance & Accounting");
+        var myTechDept = new TechnologyDept("Software Technology");
+        
+        //Calling methods
+        document.getElementById('resultDiv').innerHTML = myAccDept.getEmpCount().toString();
+        document.getElementById('resultDiv').innerHTML += "<br/>" + myAccDept.printMeeting().toString();
+
+        document.getElementById('resultDiv').innerHTML += "<br/><br/>" +myTechDept.getLocation().toString();
+        document.getElementById('resultDiv').innerHTML += "<br/>" +myTechDept.printMeeting().toString();
+        
+    </script>
+</body>
+</html>
